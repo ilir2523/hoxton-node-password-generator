@@ -84,9 +84,10 @@ function generatePassword() {
 
   const password = shuffledChars.join("");
   if (!password.length) {
-    console.log("Please set at least one condition to generate password");
+    return ("Please set at least one condition to generate password");
   } else {
-    console.log("Here's your password:  ", password);
+    // console.log("Here's your password:  ", password);
+    return (`Here's your password: ${password}`)
   }
 }
 
